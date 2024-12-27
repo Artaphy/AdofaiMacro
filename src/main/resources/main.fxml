@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="450.0" prefWidth="709.0" xmlns="http://javafx.com/javafx/10.0.2-internal"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.artaphy.adofaiMacro.manager.Controller">
+   <Pane prefHeight="450.0" prefWidth="709.0">
+      <HBox spacing="10" layoutX="26.0" layoutY="25.0">
+         <Button fx:id="button" mnemonicParsing="false" onMouseClicked="#onButtonClick"
+                 text="打开文件"/>
+         <Button fx:id="settingsButton" mnemonicParsing="false" onAction="#openSettings"
+                 text="设置" style="-fx-background-color: #2196F3; -fx-text-fill: white;"/>
+      </HBox>
+      <Label fx:id="label" layoutX="180.0" layoutY="27.0" text="未选择文件"/>
+      <Label fx:id="lag" layoutX="20.0" layoutY="66.0" text="请在谱子的第一个floor按下insert以启用该宏"/>
+      <Label fx:id="on" layoutX="173.0" layoutY="60.0" text="运行中!!" textFill="RED" visible="false">
+         <effect>
+            <Bloom threshold="1.0"/>
+         </effect>
+         <font>
+            <Font name="Calibri Bold Italic" size="12.0"/>
+         </font>
+      </Label>
+   </Pane>
+</AnchorPane> 
